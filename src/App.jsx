@@ -1,13 +1,11 @@
-// src/App.jsx
 import { useState } from 'react';
 import { Login } from './Login';
-import { Home } from './Home';
+import MenuNavegacion from './Home'; 
 
 export default function App() {
-  // Estado para saber si el usuario está logueado o no
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [opcionSeleccionada, setOpcionSeleccionada] = useState('');
 
-  // Funciones para cambiar el estado
   const handleLogin = () => {
     setIsAuthenticated(true);
   };
@@ -16,14 +14,32 @@ export default function App() {
     setIsAuthenticated(false);
   };
 
+  // Función para capturar lo que el usuario presiona en el Mega Menu
+  const handleSeleccionarSubopcion = (subopcion) => {
+    console.log("Subopción seleccionada:", subopcion);
+    setOpcionSeleccionada(subopcion);
+  };
+
   return (
     <main className="app-container">
-      {/* Renderizado condicional mediante operador ternario */}
       {isAuthenticated ? (
-        <Home onLogout={handleLogout} />
+        <div className="dashboard-layout">
+          <MenuNavegacion onSeleccionarSubopcion={handleSeleccionarSubopcion} />
+          
+          {/* Contenido principal tras iniciar sesión */}
+          <section className="contenido-principal">
+            <button onClick={handleLogout} className="btn_logout">Cerrar Sesión</button>
+            
+            {opcionSeleccionada && (
+              <p>Estás viendo: <strong>{opcionSeleccionada}</strong></p>
+            )}
+          </section>
+        </div>
       ) : (
+        /* Muestra solo el Login si no se ha autenticado */
         <Login onLoginSuccess={handleLogin} />
       )}
     </main>
   );
 }
+

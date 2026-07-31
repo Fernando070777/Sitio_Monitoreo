@@ -35,7 +35,6 @@ h3{
   border-radius: 50px 0px 50px 0px;
   border: 7px solid black;
   box-shadow: 0 10px 25px rgb(255, 255, 255);
-
 }
 
 .login_:hover{
@@ -68,5 +67,128 @@ h3{
 
 .login_ button:hover {
   background-color: #00B359;
-  box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);              
+  box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);   
+  transform: translateY(-3px);
+}
+
+.login_ img{
+  width: 170px;
+  height: 170px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px white;
+}
+
+.login_ img:hover{
+  box-shadow: 0 0 10px black;
+}
+
+.header-menu {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.nav-menu {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.lista-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.item-menu {
+  position: relative;
+}
+
+.boton-menu {
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #000;
+  border-bottom: 3px solid transparent;
+}
+
+
+.boton-menu.activo {
+  color: #0066ff;
+  border-bottom-color: #0066ff;
+}
+
+.mega-menu-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
+  border-radius: 0 0 8px 8px;
+  padding: 25px;
+  z-index: 100;
+  min-width: 550px;
+}
+
+.contenedor-columnas {
+  display: flex;
+  gap: 40px;
+}
+
+.columna-menu {
+  flex: 1;
+}
+
+.titulo-columna {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.lista-subopciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-subopcion {
+  margin-bottom: 8px;
+}
+
+.boton-subopcion {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.boton-subopcion:hover {
+  color: #0066ff;
+}
+
+.btn_logout{
+  width: 120px;
+  height: 50px;
+  background-color: green;
+  box-shadow: 0 0 10px white;
+}
+
+.btn_logout{
+  transform: translateY(-3px);
+  align-items: end;
+
 }

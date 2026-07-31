@@ -1,5 +1,5 @@
-// src/components/Login.jsx
 import { useState } from 'react';
+import Logo from './assets/Logo.svg';
 
 export function Login({ onLoginSuccess }) {
   const [email, setEmail] = useState('');
@@ -18,6 +18,9 @@ export function Login({ onLoginSuccess }) {
   return (
     <main className="login_main">
         <div className="login_">
+        <div>
+          <img src={Logo} />
+        </div>  
         <h2>Iniciar Sesión</h2>
         <form onSubmit={handleSubmit}>
             <div className='input_1'>
