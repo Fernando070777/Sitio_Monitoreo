@@ -1,6 +1,6 @@
 function Texto() {
   return (
-    <div>
+    <div className="Texto">
       
       <header>
         <h1>Sistema de Monitoreo, Telemetría y Alertas en Tiempo Real</h1>
