@@ -1,44 +1,59 @@
 function Texto() {
   return (
     <div>
-      <h1>La Ilíada - Canto I: La Cólera de Aquiles</h1>
       
-      <p>
-        Es un sistema que almacena información en una base de datos y al hacer cambios se genera una alerta al administrador en tiempo real.
-        permite el monitoreo en tiempo real, la detección anticipada de fallas y la optimización de recursos
-        Beneficios Principales
-        Datos al instante: Conoces el estado de máquinas o procesos en tiempo real.
-        Menos gastos: Ayuda a prevenir fallas lo cual ayuda a ahorrar dinero en reparaciones. 
-        Aviso de problemas: Manda alertas antes de que una pieza o sistema se rompa por completo.
-      </p>
+      <header>
+        <h1>Sistema de Monitoreo, Telemetría y Alertas en Tiempo Real</h1>
+        <p><strong>Plataforma integral para el control de dispositivos y detección de anomalías</strong></p>
+    </header>
 
-      <p>
-        Este proyecto se puede aplicar en varias áreas de trabajo que se generen datos para recopilar y almacenar en una base de datos
-        En algunos ámbitos que se puede emplear son los siguientes :
-        Transporte y Flotillas: Control de ubicación GPS, nivel de combustible, velocidad y estado del motor en camiones de carga o reparto.
-        Manufactura y Fábricas: Supervisión de temperatura, vibración y desgaste en máquinas grandes para hacer mantenimiento antes de que fallen.
-        Sector Salud: Seguimiento remoto de signos vitales en pacientes o control de temperatura en refrigeradores de medicinas y vacunas.
-        Agricultura: Medición de humedad en la tierra, clima y control de sistemas de riego a distancia.
-        Energía y Minería: Vigilancia de pozos petroleros, consumo de luz/agua y control de vehículos o maquinaria pesada en zonas alejadas
-      </p>
+    <main>
+        <section>
+            <h2>¿Qué es el proyecto?</h2>
+            <p>
+                Este proyecto es una plataforma diseñada para la <strong>telemetría y supervisión remota de dispositivos</strong>. 
+                Su objetivo principal es monitorear métricas clave de forma precisa y continua, permitiendo detectar 
+                cualquier anomalía en el sistema para <strong>generar alertas oportunas</strong> antes de que ocurra una falla crítica.
+            </p>
+        </section>
 
-      <p>
-        Es un sistema creado para la telemetria de los dispositivos para asi monitorearlos
-        de una manera mas precisa en caso de que alguno de ellos tenga una anomalia generar alertas
-      </p>
+        <section>
+            <h2>Potencial y Ámbitos de Aplicación</h2>
+            <p>
+                La arquitectura del sistema permite recolectar, procesar y almacenar datos métricos en cualquier entorno de trabajo. 
+                Entre los principales sectores donde se puede implementar destacan:
+            </p>
 
-      <p>
-        Es un sistema creado para la telemetria de los dispositivos 
-      </p>
+            <ul>
+                <li>
+                    <h3>Transporte y Flotillas</h3>
+                    <p>Rastrear ubicación GPS, nivel de combustible, velocidad y estado del motor en vehículos de carga y reparto.</p>
+                </li>
+                <li>
+                    <h3>Manufactura e Industria</h3>
+                    <p>Supervisar temperatura, vibraciones y desgaste en maquinaria pesada para habilitar mantenimiento predictivo.</p>
+                </li>
+                <li>
+                    <h3>Sector Salud</h3>
+                    <p>Monitorear signos vitales de pacientes a distancia y asegurar la cadena de frío en reactivos y vacunas.</p>
+                </li>
+                <li>
+                    <h3>Agricultura Inteligente</h3>
+                    <p>Medir la humedad del suelo, variables climáticas y automatizar sistemas de riego a distancia.</p>
+                </li>
+                <li>
+                    <h3>Energía y Minería</h3>
+                    <p>Vigilar pozos, consumo eléctrico o hídrico y controlar maquinaria pesada en zonas de difícil acceso.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-      <p>
-        —Que yo no te encuentre, anciano, cerca de las cóncavas naves, ya sea
-        demorándote ahora, ya volviendo más tarde; pues quizás no te valgan el
-        cetro y las ínfulas del dios. A aquella no la soltaré; antes le llegará la
-        vejez en mi casa, en Argos, lejos de su patria, devanando la telaraña y
-        compartiendo mi lecho. Pero vete; no me irrites, para que salgas más sano
-        y salvo.
-      </p>
+    <footer>
+  
+        <small>Sistema de Monitoreo Remoto &copy; 2026</small>
+    </footer>
+      
     </div>
   );
 }
