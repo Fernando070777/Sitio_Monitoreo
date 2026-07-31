@@ -277,3 +277,29 @@ h3 {
     transform: translateX(0);
   }
 }
+
+
+header {
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #0f766e, #1e293b);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: white;
+    max-width: 1200px;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #d1fae5;
+    font-family: sans-serif;
+}

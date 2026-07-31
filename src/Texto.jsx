@@ -2,7 +2,7 @@ function Texto() {
   return (
     <div className="Texto">
       
-      <header>
+    <header>
         <h1>Sistema de Monitoreo, Telemetría y Alertas en Tiempo Real</h1>
         <p><strong>Plataforma integral para el control de dispositivos y detección de anomalías</strong></p>
     </header>
