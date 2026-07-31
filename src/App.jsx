@@ -38,6 +38,7 @@ export default function App() {
 
             <Texto />
           </section>
+          <section></section>
         </div>
       ) : (
         
