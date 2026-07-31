@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Login } from './Login';
 import MenuNavegacion from './Home'; 
-import Texto from './Texto'; // 1. Importas el componente Texto
+import Texto from './Texto';
+import Telemetrias from './Telemetrias';
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -37,11 +38,17 @@ export default function App() {
             )}
 
             <Texto />
+
+            {/* Muestra Telemetrias si se selecciona en el menú o lo renderiza por defecto */}
+            {opcionSeleccionada === 'Telemetrias' ? (
+              <Telemetrias />
+            ) : (
+              <Telemetrias />
+            )}
           </section>
           <section></section>
         </div>
       ) : (
-        
         <Login onLoginSuccess={handleLogin} />
       )}
     </main>
