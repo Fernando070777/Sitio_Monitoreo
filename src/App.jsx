@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Login } from './Login';
 import MenuNavegacion from './Home'; 
+import Texto from './Texto'; // 1. Importas el componente Texto
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -12,6 +13,7 @@ export default function App() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
+    setOpcionSeleccionada('');
   };
 
   // Función para capturar lo que el usuario presiona en el Mega Menu
@@ -33,13 +35,14 @@ export default function App() {
             {opcionSeleccionada && (
               <p>Estás viendo: <strong>{opcionSeleccionada}</strong></p>
             )}
+
+            <Texto />
           </section>
         </div>
       ) : (
-        /* Muestra solo el Login si no se ha autenticado */
+        
         <Login onLoginSuccess={handleLogin} />
       )}
     </main>
   );
 }
-
