@@ -2,13 +2,13 @@ function Texto() {
   return (
     <div className="Texto">
       
-    <header>
+    <header className="clase1">
         <h1>Sistema de Monitoreo, Telemetría y Alertas en Tiempo Real</h1>
         <p><strong>Plataforma integral para el control de dispositivos y detección de anomalías</strong></p>
     </header>
 
     <main>
-        <section>
+        <section className="clase2">
             <h2>¿Qué es el proyecto?</h2>
             <p>
                 Este proyecto es una plataforma diseñada para la <strong>telemetría y supervisión remota de dispositivos</strong>. 
