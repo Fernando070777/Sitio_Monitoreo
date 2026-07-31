@@ -1,4 +1,3 @@
-/* --- CONFIGURACIÓN GENERAL --- */
 body {
   background-color: #030d12;
   margin: 0;
@@ -17,14 +16,12 @@ body {
   box-sizing: border-box;
 }
 
-/* Limitador de ancho para centrar el contenido */
 .main-content {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
 
-/* --- HEADER Y TÍTULOS PRINCIPALES --- */
 .hero-header {
   text-align: center;
   max-width: 900px;
@@ -63,7 +60,6 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* --- SECCIÓN INTRODUCCIÓN --- */
 .seccion-intro {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -80,7 +76,6 @@ h2 {
   margin: 0;
 }
 
-/* --- DISPOSICIÓN DE TARJETAS (GRID) --- */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -109,7 +104,6 @@ h2 {
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 12px;
-  /* Reseteamos los estilos de la animación de máquina de escribir previa para evitar problemas en cuadrícula */
   width: auto;
   overflow: visible;
   white-space: normal;
@@ -124,7 +118,6 @@ h2 {
   margin: 0;
 }
 
-/* --- FOOTER --- */
 footer {
   margin-top: 60px;
   text-align: center;

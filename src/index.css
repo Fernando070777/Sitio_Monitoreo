@@ -179,6 +179,7 @@ h3{
 
 .boton-subopcion:hover {
   color: #0066ff;
+
 }
 
 .btn_logout{
@@ -279,11 +280,11 @@ h3 {
 }
 
 
-
 .clase1 {
   border: 5px solid white;
 }
 
 .clase2 {
   border: 5px solid red;
+
 }
