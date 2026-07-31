@@ -57,7 +57,6 @@ function Texto() {
       </main>
 
       <footer>
-        <small>Sistema de Monitoreo Remoto &copy; 2026</small>
       </footer>
     </div>
   );
